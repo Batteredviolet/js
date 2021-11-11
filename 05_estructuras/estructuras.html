@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Título de la página</title>
+  </head>
+  <body>
+    <!-- <script>
+        // condicionales
+
+        const puntos = '100';
+
+        if(Number(puntos) === 101) {
+            console.log("Es igual");
+        } else{
+            console.log("No es igual");
+        }
+
+        // otras comparaciones
+
+        if(puntos !== 100) {
+            console.log("Si, es diferente");
+        } else {
+            console.log("No, no es diferente");
+        }
+
+
+        let dinero = 500;
+        let totalCarrito = 600;
+
+        if(dinero > totalCarrito){
+            console.log("Pago correcto");
+        } else {
+            console.log("Fondos insuficientes");
+        }
+
+
+
+    </script> -->
+    <!-- <script>
+    // Revisar si se cumple más de una condición
+    let rol = 'JUAN';
+
+    if(rol === 'ADMIN'){
+        console.log('El usuario tiene todos los permisos.');
+    } else if(rol === 'EDITOR'){
+        console.log('Solo puede editar y ver los registros.');
+    } else if(rol === 'AUTOR'){
+        console.log('Eres un visitante.');
+    } else{
+        console.log('Pos nada');
+    }
+
+    //switch case
+
+    const metodoDePago = 'cheque';
+
+    switch(metodoDePago) {
+        case 'efectivo':
+            console.log(`Pagaste con ${metodoDePago}`);
+            break;
+        case 'tarjeta':
+            console.log(`Pagaste con ${metodoDePago}`);
+            break;
+        case 'cheque':
+            console.log(`Pagaste con ${metodoDePago}`);
+            break;
+        default:
+            console.log('Aún no has pagado.');
+            break;
+    }
+
+</script> -->
+    <!-- <script>
+
+    //Ejemplo else if
+
+    const usuario = true;
+    const puedePagar = true;
+
+    if(usuario && puedePagar){
+        console.log('Tu pago se ha realizado con éxito.');
+    }else if(!usuario){
+        console.log('Inicia sesión primero por favor.');
+    } else if(!puedePagar){
+        console.log('No tienes dinero suficiente.');
+    } 
+
+</script> -->
+    <!-- <script>
+      let efectivo = 300;
+      let credito = 400;
+      let disponible = efectivo + credito;
+      let totalCarrito = 701;
+
+      if (efectivo > totalCarrito || credito > totalCarrito) {
+        console.log("Puedes pagar en efectivo o en tarjeta.");
+      } else if (disponible >= totalCarrito) {
+        console.log("Puedes pagar con ambos.");
+      } else {
+        console.log("Me sabe mal pero no puedes pagar.");
+      }
+
+      // ejemplo malo
+      const puntos = 500;
+
+      //   if(puntos > 300){
+      //       console.log('No está mal!');
+      //   }
+      //   else if(puntos > 400){
+      //       console.log('Puntuación excelente...')
+      //   } else {
+      //       console.log('Sigue practicando.');
+      //   }
+
+      if (puntos > 400) {
+        console.log("SUPER GENIAL!");
+      } else if (puntos > 300) {
+        console.log("No está mal!");
+      } else {
+        console.log("Sigue practicando.");
+      }
+      
+    </script> -->
+<script>
+    //operador ternario
+
+    const autenticado = true;
+    const puedePagar = false;
+    
+    console.log(autenticado ? 'Estás autenticado' : 'No tienes permisos');
+
+    // Demostración de lo mismo pero con un if
+
+    let res;
+    if(res){
+        res = 'Estás autenticado';
+    } else {
+        res = 'No tienes permisos';
+    }
+
+    console.log(autenticado ? puedePagar ? 'si puede pagar' : 'Esta registrado pero no puede pagar' : 'No esta autenticado');
+</script>  
+</body>
+</html>
